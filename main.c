@@ -1,3 +1,4 @@
+//@author Mert Özhan
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,22 +22,22 @@ int main() {
 		if (sum == 0) {
 			
 			if (i==1) {
-		    	printf("Congrats you guessed it on your %dst try\n", i);
-		    }
-		    else if (i == 2) {
-		    	printf("Congrats you guessed it on your %dnd try\n", i);
+			  	printf("Congrats you guessed it on your %dst try\n", i);
+			}
+			else if (i == 2) {
+				printf("Congrats you guessed it on your %dnd try\n", i);
 			}
 			else if (i == 3) {
-		    	printf("Congrats you guessed it on your %drd try\n", i);
+				printf("Congrats you guessed it on your %drd try\n", i);
 			}
 			else {
-		    	printf("Congrats you guessed it on your %dth try\n", i);
+				printf("Congrats you guessed it on your %dth try\n", i);
 			}
 			int ans;
-
+	
 			printf("%s", "Play again (enter 1 for play again) : ");
 			scanf_s("%d", &ans);
-
+	
 			if (ans == 1) {
 				i = 1;
 				number = NumberGenerate();
